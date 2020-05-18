@@ -4,8 +4,9 @@ body{
 }
 html{
     font-size: 62.5%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: libre baskerville,Georgia,serif;
     color: #505050;
+    font-weight: 300;
 }
 #sticky-header{
     position: fixed;
@@ -103,8 +104,8 @@ li{
     padding-bottom: 6em;
 }
 .inner-container, .outer-container {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 .inner-container{
     max-width: 80em;
@@ -120,7 +121,7 @@ h1 {
     font-weight: 500;
 }
 .space-bottom{
-    margin-bottom: 4em;
+    margin-bottom: 3em;
 }
 .content{
     padding-top: 170px;
@@ -129,15 +130,16 @@ img{
     display:block;
     width: 100%;
     height: auto;
-    margin-bottom: 2em;
+    margin-bottom: 6em;
 }
 h3{
-    font-size: 1.65em;
+    font-size: 2.5em;
     line-height: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    font-weight: 400;
 }
 p {
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 2em;
-    margin-bottom: 1.5em;
+    margin-bottom: 3.5em;
 }
