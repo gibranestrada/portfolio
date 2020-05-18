@@ -15,7 +15,7 @@ html{
 }
 .nav-container{
     padding-top: 1.5em;
-    padding-bottom: 1em;
+    padding-bottom: .5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +42,7 @@ html{
 }
 a{
     text-decoration: none;
-    margin-bottom: 1.25em;
+    margin-bottom: 1em;
     font-weight: 700;
     cursor: pointer;
     color: #505050;
@@ -99,7 +99,7 @@ li{
     margin-left: 2em;;
 }
 .hero{
-    padding-top: 6em;
+    padding-top: 3em;
     padding-bottom: 6em;
 }
 .inner-container, .outer-container {
@@ -112,13 +112,32 @@ li{
     margin-right: auto;
 }
 h1 {
-    font-size: 3em;
+    font-size: 6em;
     line-height: 1.5em;
     margin-bottom: 1em;
+    text-align: center;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-weight: 500;
 }
 .space-bottom{
     margin-bottom: 4em;
 }
 .content{
     padding-top: 170px;
+}
+img{
+    display:block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+}
+h3{
+    font-size: 1.65em;
+    line-height: 1em;
+    margin-bottom: 2em;
+}
+p {
+    font-size: 1.5em;
+    line-height: 2em;
+    margin-bottom: 1.5em;
 }
