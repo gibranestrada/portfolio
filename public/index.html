@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/index.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body id="home">
     <header id="sticky-header">
@@ -21,7 +22,7 @@
     <div class="content">
         <section class="inner-container hero"><h1>I'm Gibran. <br/>A web developer.</h1></section>
         <section class="outer-container space-bottom"><img src="../src/hero-image.jpg" alt="Hero Image/Laptop"></section>
-        <section class="inner-container space-bottom" id="about">
+        <section class="inner-container space-bottom jumptarget" id="about">
             <h3>About</h3>
             <p>I currently am working as a front end developer. I have over 2 years work experience. I have a passion for creating websites.
             </p>
@@ -29,23 +30,61 @@
         <section class="inner-container space-bottom what-i-can">
             <h3>What I can do</h3>
             <p>I'm a developer, so I know how to create your website to run across devices using the latest technologies available.
-                I build fast, interactive websites that your company will enjoy.
+                I build fast, interactive websites that your business will like.
             </p>
         </section>
         <section class="inner-container space-bottom">
-            <h3>I can help</h3>
-            <p>I'm currently available for freelance work.
+            <h3>Develop what you need</h3>
+            <p>I'm currently available for a new job opportunity or freelance work.
             If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
         </section>
-        <section class="cta-section border">
+        <section class="border jumptarget text-center" id="projects">
+            <h1>Projects</h1>
+            <h3>What I've been up to.</h3>
+            <div id="editor">
+                <div class="card">
+                    <img src="../src/editor.jpg" alt="Editor Project" target="_blank">
+                    <h3>Document Editor</h3>
+                    <h4>React / WebSockets</h4>
+                    <p>I started this project to get more familiar with websockets. You can update this document in realtime. Open two windows and start typing.</p>
+                    <div class="project-buttons">
+                        <a class="project-view" href="https://gibranestrada.github.io/doc-editor" target="_blank">See Project</a>
+                        <a class="project-source" href="https://github.com/gibranestrada/realtime-document-editor" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div id="movie">
+                <div class="card">
+                    <img src="../src/gibmovie.jpg" alt="Movie Project" target="_blank">
+                    <h3>GibMovie</h3>
+                    <h4>React / TMDB API</h4>
+                    <p>Created this project to look up information of your favorite movie. Uses The Movie Database API.</p>
+                    <div class="project-buttons">
+                        <a class="project-view" href="https://gibmovie.netlify.app/" target="_blank">See Project</a>
+                        <a class="project-source" href="https://github.com/gibranestrada/gibmovie" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="cta-section border">
             <div class="inner-container">
+                <h1>I can help.</h1>
                 <a href="mailto:info@gibranestrada.com" class="cta-button">Message me
-                    <span class="arrow-right"></span>
+                    <span class="arrow-right">&#8594;</span>
                 </a>
             </div>
         </section>
     </div>
-
+    <footer class="border jumptarget">
+        <div class="personal-info">
+            <a href="https://www.linkedin.com/in/gibranestrada/" target="_target" class="linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://github.com/gibranestrada" target="_target" class="github"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+        </div>
+            <p>Copyright &#169; <span id="footer-date"></span> Gibran Estrada</p>
+    </footer>
+    <script>
+        const footerDate = document.getElementById('footer-date');
+        footerDate.innerHTML = new Date().getFullYear();
+    </script>
 </body>
-
 </html>
